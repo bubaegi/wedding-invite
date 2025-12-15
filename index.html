@@ -100,7 +100,7 @@
             }
         }
 
-        /* Hero Section */
+        /* Hero Section - 반응형 배경 이미지 개선 */
         .hero {
             display: flex;
             align-items: center;
@@ -110,13 +110,25 @@
             text-align: center;
             padding: 40px 24px;
             position: relative;
-            background-image: url("./hero-bg.jpeg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
             overflow: hidden;
         }
 
+        /* 배경 이미지를 별도 레이어로 분리 */
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("./hero-bg.jpeg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+
+        /* 어두운 오버레이 */
         .hero::before {
             content: '';
             position: absolute;
@@ -160,6 +172,7 @@
             text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
         }
 
+        /* 모바일 최적화 */
         @media (max-width: 640px) {
             .hero {
                 height: 85vh;
@@ -172,6 +185,29 @@
 
             .hero__subtitle {
                 font-size: 1rem;
+            }
+        }
+
+        /* 세로 화면 (portrait) 최적화 */
+        @media (orientation: portrait) {
+            .hero::after {
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+
+        /* 가로 화면 (landscape) 최적화 */
+        @media (orientation: landscape) {
+            .hero::after {
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+
+        /* 태블릿 크기 */
+        @media (min-width: 641px) and (max-width: 1024px) {
+            .hero::after {
+                background-size: cover;
             }
         }
 
@@ -1014,3 +1050,4 @@
     </script>
 </body>
 </html>
+
