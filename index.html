@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="국승규 & 김성은 결혼 안내">
+    <meta name="theme-color" content="#FAF8F3">
+    <title>국승규 & 김성은 - 2026.02.14</title>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --bg-primary: #FAF8F3;
+            --text-primary: #2C2C2C;
+            --text-secondary: #6B6B6B;
+            --accent: #C9A961;
+            --accent-light: #E8DCC8;
+            --border: #E8E6E1;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+            --radius: 8px;
+        }
+
+        /* CSS Reset & Normalize */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        button {
+            cursor: pointer;
+            font-family: inherit;
+            border: none;
+            background: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-spacing {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 640px) {
+            .section-spacing {
+                padding: 60px 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            min-height: 600px;
+            text-align: center;
+            padding: 40px 24px;
+            position: relative;
+            background-image: url('./assets/images/hero-bg.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.35);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero__content {
+            animation: fadeInUp 1s ease-out;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero__title {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero__subtitle {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 12px;
+            font-weight: 400;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero__date {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                height: 85vh;
+                min-height: 500px;
+            }
+
+            .hero__title {
+                font-size: 2rem;
+            }
+
+            .hero__subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        /* Message Section */
+        .message {
+            background-color: var(--bg-primary);
+        }
+
+        .message__header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .message__header h2 {
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .message__header::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+            margin: 16px auto 0;
+        }
+
+        .message__content {
+            max-width: 680px;
+            margin: 0 auto;
+            text-align: center;
+            white-space: pre-line;
+            line-height: 2;
+            color: var(--text-secondary);
+        }
+
+        .message__content p {
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .message__content {
+                max-width: 100%;
+                line-height: 1.9;
+            }
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--bg-primary);
+        }
+
+        .gallery__header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .gallery__header h2 {
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .gallery__header::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+            margin: 16px auto 0;
+        }
+
+        .gallery__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .gallery__grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+
+        .gallery__item {
+            position: relative;
+            aspect-ratio: 1;
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery__item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-md);
+        }
+
+        .gallery__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery__item:hover .gallery__image {
+            transform: scale(1.05);
+        }
+
+        /* Gallery Image Styles */
+        .gallery__image {
+            display: block;
+        }
+
+        /* Gallery Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.is-active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal__content {
+            position: relative;
+            width: 90vw;
+            height: 90vh;
+            max-width: 800px;
+            max-height: 800px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            animation: zoomIn 0.3s ease;
+        }
+
+        .modal__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .modal__close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .modal__close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Guest Book Section */
+        .guestbook {
+            background-color: var(--bg-primary);
+        }
+
+        .guestbook__header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .guestbook__header h2 {
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .guestbook__header::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+            margin: 16px auto 0;
+        }
+
+        .guestbook__form {
+            max-width: 680px;
+            margin: 0 auto 60px;
+            background-color: #FDFBF8;
+            padding: 32px 24px;
+            border-radius: var(--radius);
+        }
+
+        .guestbook__field {
+            margin-bottom: 20px;
+        }
+
+        .guestbook__field:last-of-type {
+            margin-bottom: 24px;
+        }
+
+        .guestbook__label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .guestbook__input,
+        .guestbook__textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            color: var(--text-primary);
+            background-color: white;
+            transition: border-color 0.3s ease;
+        }
+
+        .guestbook__input:focus,
+        .guestbook__textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .guestbook__textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .guestbook__counter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+
+        .guestbook__counter.is-warning {
+            color: #C9A961;
+        }
+
+        .guestbook__submit {
+            width: 100%;
+            min-height: 48px;
+            padding: 12px 24px;
+            background-color: var(--accent);
+            color: white;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .guestbook__submit:hover {
+            background-color: #B89455;
+        }
+
+        .guestbook__submit:active {
+            transform: scale(0.98);
+        }
+
+        .guestbook__message {
+            display: none;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            text-align: center;
+            animation: slideDown 0.3s ease;
+        }
+
+        .guestbook__message.is-visible {
+            display: block;
+        }
+
+        .guestbook__message.is-error {
+            background-color: #FFE8E8;
+            color: #D32F2F;
+        }
+
+        .guestbook__message.is-success {
+            background-color: #E8F5E9;
+            color: #388E3C;
+        }
+
+        .guestbook__list {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .guestbook__item {
+            background-color: #FDFBF8;
+            padding: 20px 24px;
+            border-radius: var(--radius);
+            margin-bottom: 16px;
+            animation: slideIn 0.4s ease;
+            border-left: 3px solid var(--accent);
+        }
+
+        .guestbook__item:first-child {
+            animation: slideIn 0.4s ease;
+        }
+
+        .guestbook__name {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .guestbook__text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            word-break: break-word;
+        }
+
+        .guestbook__empty {
+            text-align: center;
+            color: var(--text-secondary);
+            padding: 40px 24px;
+            font-size: 0.95rem;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--bg-primary);
+        }
+
+        .contact__header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .contact__header h2 {
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .contact__header::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+            margin: 16px auto 0;
+        }
+
+        .contact__buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 480px) {
+            .contact__buttons {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+
+        .contact__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 56px;
+            padding: 16px 24px;
+            background-color: var(--accent);
+            color: white;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+        }
+
+        .contact__button:hover {
+            background-color: #B89455;
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .contact__button:active {
+            transform: translateY(0);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            will-change: opacity, transform;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-primary);
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">국승규<br>& 김성은</h1>
+            <p class="hero__subtitle">2026년 2월 14일 토요일</p>
+            <p class="hero__date">Valentine's Day</p>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="message section-spacing fade-in-section">
+        <div class="container">
+            <div class="message__header">
+                <h2>우리를 사랑하는 분들에게</h2>
+            </div>
+            <div class="message__content">
+                <p>
+서로의 곁에서 웃고, 함께 걸으며
+하루하루가 소중한 인연이 되었습니다.
+진심을 담아 이제는 한 길을 가기로 했습니다.
+                </p>
+                <p>
+결혼식은 올리지 않지만,
+서로에게 마음을 다해 약속드리며
+조용히 두 사람의 시작을 전합니다.
+                </p>
+                <p>
+축복의 마음으로 지켜봐 주시면 감사하겠습니다.
+                </p>
+                <p>
+저희의 소식을 기쁘게 지켜봐 주시는 모든 분들께
+늘 건강과 평안이 함께하시길 진심으로 기도드립니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-spacing fade-in-section">
+        <div class="container">
+            <div class="gallery__header">
+                <h2>우리의 순간</h2>
+            </div>
+            <div class="gallery__grid" id="galleryGrid">
+                <!-- Generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal" id="galleryModal">
+        <div class="modal__content">
+            <div class="modal__image" id="modalImage"></div>
+            <button class="modal__close" id="modalClose">×</button>
+        </div>
+    </div>
+
+    <!-- Guest Book Section -->
+    <section class="guestbook section-spacing fade-in-section">
+        <div class="container">
+            <div class="guestbook__header">
+                <h2>Guest Book</h2>
+            </div>
+
+            <form class="guestbook__form" id="guestbookForm">
+                <div id="formMessage" class="guestbook__message"></div>
+
+                <div class="guestbook__field">
+                    <label for="guestName" class="guestbook__label">이름 *</label>
+                    <input
+                        type="text"
+                        id="guestName"
+                        class="guestbook__input"
+                        placeholder="이름을 입력해주세요"
+                        required
+                        maxlength="50"
+                    />
+                </div>
+
+                <div class="guestbook__field">
+                    <label for="guestMessage" class="guestbook__label">메시지 *</label>
+                    <textarea
+                        id="guestMessage"
+                        class="guestbook__textarea"
+                        placeholder="축복의 말씀을 남겨주세요"
+                        required
+                        maxlength="200"
+                    ></textarea>
+                    <div class="guestbook__counter">
+                        <span>최대 200자</span>
+                        <span id="charCount">0</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="guestbook__submit">등록</button>
+            </form>
+
+            <div class="guestbook__list" id="guestbookList">
+                <div class="guestbook__empty">아직 메시지가 없습니다.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-spacing fade-in-section">
+        <div class="container">
+            <div class="contact__header">
+                <h2>연락하기</h2>
+            </div>
+            <div class="contact__buttons">
+                <a href="sms:010-4759-2291" class="contact__button">신랑에게<br>메시지</a>
+                <a href="sms:010-7300-9312" class="contact__button">신부에게<br>메시지</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>함께 걷는 모든 순간을 소중히 하겠습니다.</p>
+    </footer>
+
+    <script>
+        // Gallery Images Array
+        // To replace images: simply update the URL in the array below
+        // All images are from Unsplash (free, no attribution required)
+        const galleryImages = [
+            {
+                src: 'https://images.unsplash.com/photo-1668413608508-750c684ab823?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8d2VkZGluZyUyMGNvdXBsZSUyMHdhcm18ZW58MHx8fHwxNzY1NzgxMjI3fDA&ixlib=rb-4.1.0&q=85&w=800',
+                alt: '목재 건물에서 키스하는 부부'
+            },
+            {
+                src: 'https://plus.unsplash.com/premium_photo-1711188859131-b10ed3b10c22?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8d2VkZGluZyUyMGNvdXBsZSUyMHdhcm18ZW58MHx8fHwxNzY1NzgxMjI3fDA&ixlib=rb-4.1.0&q=85&w=800',
+                alt: '야외 선인장 아치 웨딩'
+            },
+            {
+                src: 'https://plus.unsplash.com/premium_photo-1661414443260-351fe89e793e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8d2VkZGluZyUyMGNvdXBsZSUyMHdhcm18ZW58MHx8fHwxNzY1NzgxMjI3fDA&ixlib=rb-4.1.0&q=85&w=800',
+                alt: '겨울 웨딩 부부'
+            },
+            {
+                src: 'https://plus.unsplash.com/premium_photo-1661411508374-d5f271e348c1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTN8fHdlZGRpbmclMjBjb3VwbGUlMjB3YXJtfGVufDB8fHx8MTc2NTc4MTIyN3ww&ixlib=rb-4.1.0&q=85&w=800',
+                alt: '화환을 쓴 신부'
+            },
+            {
+                src: 'https://images.unsplash.com/photo-1668773806774-867f7e5d4169?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fHdlZGRpbmclMjBjb3VwbGUlMjB3YXJtfGVufDB8fHx8MTc2NTc4MTIyN3ww&ixlib=rb-4.1.0&q=85&w=800',
+                alt: '입맞추는 부부 클로즈업'
+            }
+        ];
+
+        // Render Gallery
+        function renderGallery() {
+            const galleryGrid = document.getElementById('galleryGrid');
+            galleryGrid.innerHTML = galleryImages
+                .map(
+                    (image, index) => `
+                <figure class="gallery__item" data-gallery-index="${index}">
+                    <img
+                        src="${image.src}"
+                        alt="${image.alt}"
+                        class="gallery__image"
+                        loading="lazy"
+                    />
+                </figure>
+            `
+                )
+                .join('');
+
+            // Attach click handlers after rendering
+            attachGalleryClickHandlers();
+        }
+
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in sections
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Gallery Modal Functionality
+        const modal = document.getElementById('galleryModal');
+        const modalImageContainer = document.getElementById('modalImage');
+        const modalClose = document.getElementById('modalClose');
+
+        function attachGalleryClickHandlers() {
+            const galleryItems = document.querySelectorAll('.gallery__item');
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const imageElement = item.querySelector('.gallery__image');
+                    const imageSrc = imageElement.src;
+                    const imageAlt = imageElement.alt;
+
+                    // Create img element for modal
+                    modalImageContainer.innerHTML = `<img src="${imageSrc}" alt="${imageAlt}" style="width: 100%; height: 100%; object-fit: cover;" />`;
+                    modal.classList.add('is-active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+        }
+
+        // Close modal
+        const closeModal = () => {
+            modal.classList.remove('is-active');
+            document.body.style.overflow = '';
+        };
+
+        modalClose.addEventListener('click', closeModal);
+
+        // Close on backdrop click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+                closeModal();
+            }
+        });
+
+        // Prevent scroll when modal is open
+        // (handled above with body overflow)
+
+        // Guest Book Functionality
+        const guestbookForm = document.getElementById('guestbookForm');
+        const guestNameInput = document.getElementById('guestName');
+        const guestMessageInput = document.getElementById('guestMessage');
+        const charCountDisplay = document.getElementById('charCount');
+        const guestbookList = document.getElementById('guestbookList');
+        const formMessage = document.getElementById('formMessage');
+
+        // Initialize guestbook from localStorage
+        let guestbookEntries = JSON.parse(localStorage.getItem('guestbookEntries')) || [];
+
+        // Display existing entries
+        function renderGuestbook() {
+            if (guestbookEntries.length === 0) {
+                guestbookList.innerHTML = '<div class="guestbook__empty">아직 메시지가 없습니다.</div>';
+            } else {
+                guestbookList.innerHTML = guestbookEntries
+                    .map(
+                        entry => `
+                    <div class="guestbook__item">
+                        <div class="guestbook__name">${escapeHtml(entry.name)}</div>
+                        <div class="guestbook__text">${escapeHtml(entry.message)}</div>
+                    </div>
+                `
+                    )
+                    .join('');
+            }
+        }
+
+        // Escape HTML to prevent XSS
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Show message
+        function showMessage(text, type) {
+            formMessage.textContent = text;
+            formMessage.className = `guestbook__message is-visible is-${type}`;
+
+            setTimeout(() => {
+                formMessage.classList.remove('is-visible');
+            }, 3000);
+        }
+
+        // Update character count
+        guestMessageInput.addEventListener('input', () => {
+            charCountDisplay.textContent = guestMessageInput.value.length;
+
+            if (guestMessageInput.value.length > 160) {
+                charCountDisplay.parentElement.classList.add('is-warning');
+            } else {
+                charCountDisplay.parentElement.classList.remove('is-warning');
+            }
+        });
+
+        // Handle form submission
+        guestbookForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = guestNameInput.value.trim();
+            const message = guestMessageInput.value.trim();
+
+            // Validation
+            if (!name) {
+                showMessage('이름을 입력해주세요.', 'error');
+                guestNameInput.focus();
+                return;
+            }
+
+            if (!message) {
+                showMessage('메시지를 입력해주세요.', 'error');
+                guestMessageInput.focus();
+                return;
+            }
+
+            if (message.length > 200) {
+                showMessage('메시지는 200자 이내여야 합니다.', 'error');
+                return;
+            }
+
+            // Add new entry to beginning of array (most recent first)
+            guestbookEntries.unshift({
+                name: name,
+                message: message,
+                timestamp: new Date().toISOString()
+            });
+
+            // Save to localStorage
+            localStorage.setItem('guestbookEntries', JSON.stringify(guestbookEntries));
+
+            // Reset form
+            guestbookForm.reset();
+            charCountDisplay.textContent = '0';
+            charCountDisplay.parentElement.classList.remove('is-warning');
+
+            // Re-render
+            renderGuestbook();
+
+            // Show success message
+            showMessage('메시지가 등록되었습니다!', 'success');
+
+            // Scroll to guestbook list
+            setTimeout(() => {
+                guestbookList.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
+        });
+
+        // Initial render
+        renderGuestbook();
+        renderGallery();
+    </script>
+</body>
+</html>
